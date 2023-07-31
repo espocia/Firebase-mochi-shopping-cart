@@ -1,0 +1,126 @@
+@import "css_reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+:root {
+  --bg-color-input: #dce1eb;
+  --bg-color-main: #eef0f4;
+  --clr-btn: #ac485a;
+  --clr-list: #fffdf8;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  user-select: none;
+}
+
+.container,
+.container button,
+.container input[type="text"] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  /* Add any additional styles you want for buttons and inputs here */
+}
+.cat-img {
+  width: 100%;
+  max-width: 225px;
+}
+
+.modal {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}
+
+.modal button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin: 20px;
+  background-color: var(--bg-color-input);
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow:
+    rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#delete {
+  background-color: var(--clr-btn);
+  color: white;
+}
+
+.container {
+  background-color: var(--bg-color-main);
+  flex-direction: column;
+  margin: 10px 25px;
+  padding: 25px 40px;
+  max-width: 300px;
+}
+
+.input-field {
+  text-align: center;
+  padding: 10px 0px;
+  background-color: var(--bg-color-input);
+  border: none;
+  margin-top: 10px;
+  width: 100%;
+  color: grey;
+}
+
+.add-button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 12px 0px;
+  border: none;
+  background-color: var(--clr-btn);
+  color: white;
+}
+
+.groceries-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-element:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.list-element {
+  margin: 5px;
+  padding: 15px;
+  background-color: var(--clr-list);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  color: #5c4033;
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <title>Mochi Shopping Cart</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="flex-center">
+  <div class="modal hidden" id="modal">
+    <button type="button" class="cancel" id="cancel">cancel</button>
+    <button type="button" class="delete" id="delete">delete</button>
+  </div>
+  <div class="fields">
+    <div class="container flex-center" id="container">
+      <img src="images/cat.png" class="cat-img" alt="" />
+      <input type="text" class="input-field" name="input-field" id="input-field" placeholder="Bread" />
+      <button type="button" class="add-button" id="add-button">
+        Add to cart
+      </button>
+      <div class="list-container">
+        <ul class="groceries-list flex-center" id="groceries-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
